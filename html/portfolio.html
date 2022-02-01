@@ -17,10 +17,7 @@
                 $(function () {
                     $("#Sneeze").hide();
                     $("#Pokemon").hide();
-                    $("#Lyrics2PDF").hide();
-                    $("#guitarproject").hide();
-                    $("#diypedal").hide();
-                    $("#churchProj").hide(); 
+                    $("#AoeAnalytics").hide();
                 });
             });
             }(jQuery));
@@ -101,6 +98,23 @@
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
+                <div class="col-md-4" id="AoeAnalytics">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="../assets/esports_news.jpg" style="height: 300px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <div class="card-text text-center">
+                                <h5>AOE Analytics</h5>
+                                <p class="lead">
+                                    A web-application myself and a team of students at A&M made 
+                                    in order to conglomerate multiple eSports news networks into one webpage.
+                                    Makes use of multiple APIs in order to track team stats, recent news on youtube and twitter,
+                                    and google login to save events.
+                                </p>
+                                <a href="https://aoe-analytics.herokuapp.com/rl/">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4" id="Sneeze">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="../assets/sneeze.PNG" style="height: 300px; width: 100%; display: block;">
@@ -108,7 +122,8 @@
                             <div class="card-text text-center">
                                 <h5>Sneeze</h5>
                                 <p class="lead">A retro-style video game I created with a team during the pandemic as part
-                                    of a game jam with the Texas A&M Game Developers
+                                    of a game jam with the Texas A&M Game Developers. This game was a top-down puzzle game in which
+                                    the main goal was to infect the world by sneezing from person to person.
                                 </p>
                                 <a href="https://geirgie25.itch.io/sneeze">Check it out</a>
                             </div>
@@ -123,62 +138,15 @@
                                 <h5>Pokemon on CMD</h5>
                                 <p class="lead">
                                     A recreation of Pokemon I made in python using the terminal.
-                                    Implemented a catching system, team management, and multiplayer.
+                                    Implemented a catching system, team management, singleplayer and multiplayer battles.
+                                    The project is what really showed me how coding could be fun, since I love to play Pokemon games. 
                                 </p>
-                                <a href="https://github.tamu.edu/s-davis/cmdLinePokemon">Github Project</a>
+                                <a href="https://github.tamu.edu/s-davis/cmdLinePokemon">Check it out</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" id="Lyrics2PDF">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/chords.PNG" style="height: 300px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <div class="card-text text-center">
-                                <h5>Lyric2PDF</h5>
-                                <p class="lead">
-                                    A program that will output a formatted pdf with lyrics and chords of any song online. 
-                                    Gives lyrics and can be customized.
-                                </p>
-                                <a href="https://github.tamu.edu/s-davis/L2PDF">Github Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="churchProj">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/service.jpg" style="height: 300px; width: 100%; display: block;">
-                        <div class="card-body text-center">
-                            <h5>Worship Database</h5>
-                            <p class="lead">
-                                A software that uses an online database of songs to automatically mix
-                                soundboards for churches and live worship.
-                            </p>
-                            <a href="https://github.tamu.edu/s-davis/Soundboard-Database">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="diypedal">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/pedal.PNG" style="height: 300px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <div class="card-text text-center">
-                                <h5>DIY Effects Pedal</h5>
-                                <p class="lead">A custom built guitar pedal used for distoring the sound of my electric guitar.
-                                    I started this project to learn how basic circuitry works in audio effect units.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="guitarproject">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../assets/guitarproject.jpg" style="height: 50%; width: 100%; display: block;">
-                        <div class="card-body">
-                            <div class="card-text text-center lead"><a href="https://photos.app.goo.gl/iMa8aKpUBWPVABrG6">This guitar</a> I bought for less than $200 completely customized it</div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -188,15 +156,10 @@
     (function ($) {
     $(document).ready(function(){
         $(function () {
-            $('#Sneeze').fadeIn(500, function() {
-                $('#Pokemon').fadeIn(500, function () {
-                    $('#Lyrics2PDF').fadeIn(500,function () {
-                        $('#churchProj').fadeIn(500, function () {
-                            $('#diypedal').fadeIn(500, function () {
-                                $('#guitarproject').fadeIn(500);
-                            });
-                        });
-                    });
+
+            $('#AoeAnalytics').fadeIn(750, function() {
+                $('#Sneeze').fadeIn(750, function() {
+                    $('#Pokemon').fadeIn(750);
                 });
             }); 
         });
